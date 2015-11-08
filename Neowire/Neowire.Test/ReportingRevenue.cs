@@ -1,15 +1,12 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-namespace Neowire.Reporting.Test
+namespace Neowire.Test
 {
-    [TestClass]
     public class ReportingRevenue
     {
-
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_PageLoads_Visuals()
+        [Fact]
+        public void PageLoads_Visuals()
         {
             ///GWT 1
             /// - Given
@@ -22,9 +19,8 @@ namespace Neowire.Reporting.Test
         }
 
 
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_ViewSearchCriteria_SearchCriteria()
+        [Fact]
+        public void ViewSearchCriteria_SearchCriteria()
         {
             /// GWT 2
             /// - Given
@@ -60,9 +56,9 @@ namespace Neowire.Reporting.Test
         }
 
 
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_ValidDateSubmit_Results()
+        [Fact]
+        //[TestCategory("Revenue Reporting")]
+        public void RevenueReporting_ValidDateSubmit_Results()
         {
             // GWT 3
             // - Given
@@ -75,9 +71,8 @@ namespace Neowire.Reporting.Test
             throw new NotImplementedException();
         }
 
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_InvalidDateSubmit_Error()
+        [Fact]
+        public void RevenueReporting_InvalidDateSubmit_Error()
         {
             // GWT 4
             // - Given
@@ -91,9 +86,8 @@ namespace Neowire.Reporting.Test
             throw new NotImplementedException();
         }
 
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_ValidSubmit_SortColumns()
+        [Fact]
+        public void RevenueReporting_ValidSubmit_SortColumns()
         {
             //GWT 5
             //- Given
@@ -128,9 +122,8 @@ namespace Neowire.Reporting.Test
             throw new NotImplementedException();
         }
 
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_ExportNoResults_CsvCreated()
+        [Fact]
+        public void RevenueReporting_ExportNoResults_CsvCreated()
         {
 
             //                GWT 6
@@ -145,9 +138,8 @@ namespace Neowire.Reporting.Test
             //                -- Columns in the export are the same and in the same order as columns in the results table
             throw new NotImplementedException();
         }
-        [TestMethod]
-        [TestCategory("Revenue Reporting")]
-        public void ReportingRevenue_ExportResult_CsvCreated()
+        [Fact]
+        public void RevenueReporting_ExportResult_CsvCreated()
         {
             //                GWT 7
             //                - Given
@@ -160,7 +152,7 @@ namespace Neowire.Reporting.Test
             //                -- The file will include column headers
             //                -- Columns in the export are the same and in the same order as columns in the results table
             //                -- Results in the table exported should match the results displayed on the reporting page
-            //
+            //}
             throw new NotImplementedException();
         }
     }
