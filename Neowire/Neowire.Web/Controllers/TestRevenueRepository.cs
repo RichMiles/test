@@ -10,8 +10,17 @@ namespace Neowire.Web.Controllers
         {
             return new RevenueLineItemModel[]
                 {
-                    new RevenueLineItemModel { AttemptedRegistrations = 1 }
+                    new RevenueLineItemModel { AttemptedRegistrations = 1 },
+                    new RevenueLineItemModel { AttemptedRegistrations = 600, }
                 };
+        }
+
+        public IEnumerable<Path> GetPaths()
+        {
+            return new Path[]
+            {
+                new Path() { Id = Guid.NewGuid(), Name = "My Path",  }
+            };
         }
     }
 }

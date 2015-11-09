@@ -18,5 +18,10 @@ namespace Neowire.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Offer()
+        {
+            return View();
+        }
     }
 }

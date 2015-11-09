@@ -9,5 +9,6 @@ namespace Neowire.Web.Controllers
     public class Campaign
     {
         public Collection<LandingPageAb> LandingPages { get; set; }
+        public Collection<PathAb> Paths { get; set; }
     }
 }
