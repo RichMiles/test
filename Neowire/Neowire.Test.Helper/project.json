@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+  "description": "Neowire.Test.Helper Class Library",
+  "authors": [ "Rich" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23409",
+        "System.Collections": "4.0.11-beta-23409",
+        "System.Linq": "4.0.1-beta-23409",
+        "System.Runtime": "4.0.21-beta-23409",
+        "System.Threading": "4.0.11-beta-23409"      
+      }
+    }
+  },
+  "dependencies": {
+    "Neowire.Data": "1.0.0-*",
+    "System.Collections.Immutable": "1.1.38-*"
+  }
+}
