@@ -33,25 +33,30 @@ namespace Neowire.Test.Helper
             paths.Add(PathModel.Build(
                 Path_LandingPageGuid,
                 "Landing Page Only Path",
-                repository.GetPathTypeById(PathType_LandingPageGuid),
+                repository.GetPathTypeById(PathType_LandingPageId),
                 null,
                 null));
             return paths;
         }
+        #endregion
+
+        #region Path Landing Pages
+        static Guid PathLandingPage_LandingPageAId { get; set; } = Guid.Parse("3997328E-5213-4FC5-8BF5-F4BF08924E95");
+        static Guid PathLandingPage_LandingPageBId { get; set; } = Guid.Parse("6A725CD5-2D41-4EF6-9C81-4AFC5C2FD39D");
 
         #endregion
 
         #region Path Types
-        static Guid PathType_LandingPageGuid { get; set; } = Guid.Parse("6794253D-8CCE-44C4-877B-C60D193038CF");
-        static Guid PathType_OfferPage { get; set; } = Guid.Parse("CA6E07D7-8EE1-4A47-9814-4966BEF66186");
-        static Guid PathType_Survey { get; set; } = Guid.Parse("FE0FC2EE-6E8C-45E1-97A0-FF4ACC291079");
+        static Guid PathType_LandingPageId { get; set; } = Guid.Parse("6794253D-8CCE-44C4-877B-C60D193038CF");
+        static Guid PathType_OfferPageId { get; set; } = Guid.Parse("CA6E07D7-8EE1-4A47-9814-4966BEF66186");
+        static Guid PathType_SurveyId { get; set; } = Guid.Parse("FE0FC2EE-6E8C-45E1-97A0-FF4ACC291079");
 
         public static IEnumerable<PathTypeModel> BuildStandardPathTypes()
         {
             List<PathTypeModel> pathTypes = new List<PathTypeModel>();
-            pathTypes.Add(PathTypeModel.Build(PathType_LandingPageGuid, "Landing Page Only"));
-            pathTypes.Add(PathTypeModel.Build(PathType_OfferPage, "Offer Page"));
-            pathTypes.Add(PathTypeModel.Build(PathType_Survey, "Survey"));
+            pathTypes.Add(PathTypeModel.Build(PathType_LandingPageId, "Landing Page Only"));
+            pathTypes.Add(PathTypeModel.Build(PathType_OfferPageId, "Offer Page"));
+            pathTypes.Add(PathTypeModel.Build(PathType_SurveyId, "Survey"));
             return pathTypes;
         }
         #endregion

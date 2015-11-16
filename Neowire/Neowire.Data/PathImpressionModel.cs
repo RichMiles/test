@@ -16,6 +16,5 @@ namespace Neowire.Data
         string SignupUrl { get; set;}
         string UserAgent { get; set; }
         string Device { get; set; }
-
     }
 }

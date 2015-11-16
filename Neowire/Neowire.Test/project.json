@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "",
   "authors": [ "" ],
@@ -7,7 +7,8 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Neowire.Web": "1.0.0-*",
+    "Neowire.Data": "1.0.0-*",
+    "Neowire.Test.Helper": "1.0.0-*",
     "xunit": "2.1.0-*",
     "xunit.runner.dnx": "2.1.0-*"
   },
